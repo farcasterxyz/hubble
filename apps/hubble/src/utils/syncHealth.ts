@@ -746,7 +746,7 @@ export const printSyncHealth = async (
         }
         peerRpcClient.close();
       } catch (err) {
-        console.log("Rasied while computing sync health", err);
+        console.log("Raised while computing sync health", err);
       }
     }
 

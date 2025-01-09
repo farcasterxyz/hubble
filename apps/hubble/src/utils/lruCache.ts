@@ -26,7 +26,7 @@ export class LRUCache<K, T> {
    * Get the value associated with the given key. If the key is not found in the cache, the
    * provided function is called to get the value.
    *
-   * If the get functon throws, the key is not added to the cache.
+   * If the get function throws, the key is not added to the cache.
    * and this function will throw the same error.
    *
    * @param key The key to lookup

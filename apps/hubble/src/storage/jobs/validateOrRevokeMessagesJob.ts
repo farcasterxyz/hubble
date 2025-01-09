@@ -41,7 +41,7 @@ export class ValidateOrRevokeMessagesJobScheduler {
   private _cronTask?: cron.ScheduledTask;
   private _running = false;
 
-  // Wether to check all messages for fid%14 == new Date().getDate()%14
+  // Whether to check all messages for fid%14 == new Date().getDate()%14
   private _checkAllFids;
 
   constructor(db: RocksDB, engine: Engine, checkAllFids = true) {

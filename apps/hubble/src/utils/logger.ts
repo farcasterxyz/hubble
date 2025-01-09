@@ -59,7 +59,7 @@ class BufferedLogger {
   private buffering = false;
   private logger: Logger;
 
-  // Keep track of all worker thread loggers so we can propogate the flush event
+  // Keep track of all worker thread loggers so we can propagate the flush event
   private workerThreadLoggerCallbacks: (() => void)[] = [];
 
   constructor() {

@@ -163,7 +163,7 @@ describe("MerkleTrie", () => {
     });
 
     test(
-      "inserting multiple doesnt cause unload conflict",
+      "inserting multiple doesn't cause unload conflict",
       async () => {
         const syncIds = await NetworkFactories.SyncId.createList(500);
 

@@ -35,7 +35,7 @@ async fn main() {
     msg_data.set_cast_add_body(cast_add);
 
     let msg_data_bytes = msg_data.write_to_bytes().unwrap();
-    // Calculate the blake3 hash, trucated to 20 bytes
+    // Calculate the blake3 hash, truncated to 20 bytes
     let hash = blake3::hash(&msg_data_bytes).as_bytes()[0..20].to_vec();
 
     // Construct the actual message

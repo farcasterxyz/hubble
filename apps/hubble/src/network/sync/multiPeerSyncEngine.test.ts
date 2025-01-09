@@ -1675,7 +1675,7 @@ describe("Multi peer sync engine with rpcs", () => {
 
     const messageStats2 = (await syncHealthProbe.computeSyncHealthMessageStats(start, stop))._unsafeUnwrap();
 
-    // Query is inclusive of the start time and exclusive of the stop time. We cound 150, 170, 180 on engine1 and  150, 170 on engine 2
+    // Query is inclusive of the start time and exclusive of the stop time. We count 150, 170, 180 on engine1 and  150, 170 on engine 2
     expect(messageStats2.primaryNumMessages).toEqual(3);
     expect(messageStats2.peerNumMessages).toEqual(2);
 

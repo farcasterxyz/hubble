@@ -176,7 +176,7 @@ export interface HubOptions {
   /** Farcaster network */
   network: FarcasterNetwork;
 
-  /** Wether to log individual submitMessage status */
+  /** Whether to log individual submitMessage status */
   logIndividualMessages?: boolean;
 
   /** The PeerId of this Hub */
@@ -1437,7 +1437,7 @@ export class Hub implements HubInterface {
         );
       }
       // If message is older than seenTTL, we will try to merge it, but report it as invalid so it doesn't
-      // propogate across the network
+      // propagate across the network
       const cutOffTime = getFarcasterTime().unwrapOr(0) - GOSSIP_SEEN_TTL / 1000;
 
       if (gossipMessage.timestamp < cutOffTime) {

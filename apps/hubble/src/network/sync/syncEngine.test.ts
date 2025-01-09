@@ -371,7 +371,7 @@ describe("SyncEngine", () => {
     expect((await syncEngine.syncStatus("test", oldSnapshot))._unsafeUnwrap().shouldSync).toBeTruthy();
   });
 
-  test("syncStatus.shouldSync is false if we didnt merge any messages successfully recently", async () => {
+  test("syncStatus.shouldSync is false if we didn't merge any messages successfully recently", async () => {
     await engine.mergeOnChainEvent(custodyEvent);
     await engine.mergeOnChainEvent(signerEvent);
     await engine.mergeOnChainEvent(storageEvent);

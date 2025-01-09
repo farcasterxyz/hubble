@@ -63,7 +63,7 @@ const fNameProvider = new FNameRegistryEventsProvider(
     submitUserNameProof: (proof: UserNameProof) => engine.mergeUserNameProof(proof),
     getHubState: () => ResultAsync.fromSafePromise(Promise.resolve({ lastFnameProof: 0 })),
     putHubState: () => undefined,
-    // biome-ignore lint/suspicious/noExplicitAny: mock doesnt specify full interface
+    // biome-ignore lint/suspicious/noExplicitAny: mock doesn't specify full interface
   } as any,
   false,
 );
@@ -1102,7 +1102,7 @@ describe("mergeMessages", () => {
     expect(new Set(mergedMessages)).toEqual(new Set([castAdd, reactionAdd, linkAdd, userDataAdd, verificationAdd]));
   });
 
-  test("succeds with linkAdd and compaction messages", async () => {
+  test("succeeds with linkAdd and compaction messages", async () => {
     const linkCompactState = await Factories.LinkCompactStateMessage.create(
       {
         data: {
