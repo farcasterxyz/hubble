@@ -73,9 +73,9 @@
 | Name                                   | Number | Description |
 |----------------------------------------|--------|-------------|
 | ID_REGISTER_EVENT_TYPE_NONE            | 0      |             |
-| ID_REGISTER_EVENT_TYPE_REGISTER        | 0      |             |
-| ID_REGISTER_EVENT_TYPE_TRANSFER        | 0      |             |
-| ID_REGISTER_EVENT_TYPE_CHANGE_RECOVERY | 0      |             |
+| ID_REGISTER_EVENT_TYPE_REGISTER        | 1      |             |
+| ID_REGISTER_EVENT_TYPE_TRANSFER        | 2      |             |
+| ID_REGISTER_EVENT_TYPE_CHANGE_RECOVERY | 3      |             |
 
 <a name="-StorageRentEventBody"></a>
 ### StorageRentEventBody

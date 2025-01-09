@@ -5,7 +5,7 @@
 ############## Stage 1: Create pruned version of monorepo #####################
 ###############################################################################
 
-FROM node:22.4.1-slim AS prune
+FROM node:20.4.1-slim AS prune
 
 USER node
 RUN mkdir /home/node/app
@@ -21,7 +21,7 @@ RUN /home/node/.yarn/bin/turbo prune --scope=@farcaster/hubble --docker
 ############## Stage 2: Build the code using a full node image ################
 ###############################################################################
 
-FROM node:22.4.1-slim AS build
+FROM node:20.4.1-slim AS build
 
 # Needed for compilation step
 RUN apt-get update && apt-get install -y cmake curl g++ libclang-dev linux-headers-generic make protobuf-compiler python3
@@ -64,7 +64,7 @@ RUN rm -rf node_modules && yarn install --production --ignore-scripts --prefer-o
 ########## Stage 3: Copy over the built code to a leaner alpine image #########
 ###############################################################################
 
-FROM node:22.4.1-slim as app
+FROM node:20.4.1-slim as app
 
 RUN apt-get update && apt-get install -y curl procps
 

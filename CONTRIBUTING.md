@@ -285,16 +285,16 @@ are at all unsure about how to proceed, please reach out to Varun ([Github](http
 1. Checkout a new branch and run `yarn changeset version`
 2. Review CHANGELOG.md and confirm that it is accurate
 3. Check that `package.json` was bumped correctly
-3. If the protocol version changes, bump `FARCASTER_VERSIONS_SCHEDULE` and  `FARCASTER_VERSION`
-4. Create commit, merge to main, check out commit on main and run `yarn build`
-5. Publish changes by running `yarn changeset publish`
-6. Fetch and update tags with `git fetch origin --tags && yarn changeset tag && git tag -f @latest`
-7. Delete the biome tags `git tag -d biome-config-custom@0.0.1`
-8. Push tags with `git push origin HEAD --tags -f`
-9. If docker build does not start `git push upstream --delete @farcaster/hubble@<version> && git push upstream --tags @farcaster/hubble@<version>` to re-trigger it.
-10. Create a GitHub Release for Hubble, copying over the changelog and marking it as the latest.
-11. If this is a non-patch change, create an NFT for the release.
-12. Make sure that the Docker image for the latest release gets built and published to [Docker hub](https://hub.docker.com/r/farcasterxyz/hubble/tags).
+4. If the protocol version changes, bump `FARCASTER_VERSIONS_SCHEDULE` and `FARCASTER_VERSION`
+5. Create commit, merge to main, check out commit on main and run `yarn build`
+6. Publish changes by running `yarn changeset publish`
+7. Fetch and update tags with `git fetch origin --tags && yarn changeset tag && git tag -f @latest`
+8. Delete the biome tags `git tag -d biome-config-custom@0.0.1`
+9. Push tags with `git push origin HEAD --tags -f`
+10. If docker build does not start `git push upstream --delete @farcaster/hubble@<version> && git push upstream --tags @farcaster/hubble@<version>` to re-trigger it.
+11. Create a GitHub Release for Hubble, copying over the changelog and marking it as the latest.
+12. If this is a non-patch change, create an NFT for the release.
+13. Make sure that the Docker image for the latest release gets built and published to [Docker hub](https://hub.docker.com/r/farcasterxyz/hubble/tags).
 
 ### 3.7 Working in Rust
 
