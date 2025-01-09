@@ -87,11 +87,6 @@ Networking Options:
   --rpc-rate-limit <number>             RPC rate limit for peers specified in rpm. Set to -1 for none. (default: 20k/min)
   --rpc-subscribe-per-ip-limit <number> Maximum RPC subscriptions per IP address (default: 4)
 
-Snapshots Options:
-  --enable-snapshot-to-s3               Enable daily snapshots to be uploaded to S3. (default: disabled)
-  --s3-snapshot-bucket <bucket>         The S3 bucket to upload snapshots to
-  --disable-snapshot-sync               Disable syncing from snapshots. (default: enabled)
-
 Metrics:
   --statsd-metrics-server <host>        The host to send statsd metrics to, eg "127.0.0.1:8125". (default: disabled)
 

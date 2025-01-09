@@ -48,8 +48,8 @@ Due to a quirk of how gRPC compiles types to TypeScript, MessageData has many op
 | `signerRemoveBody?`              | [`SignerRemoveBody`](#signerremovebody)                           | Present if type is SIGNER_REMOVE                   |
 | `userDataBody?`                  | [`UserDataBody`](#userdatabody)                                   | Present if type is USER_DATA_ADD                   |
 | `castAddBody?`                   | [`CastAddBody`](#castaddbody)                                     | Present if type is CAST_ADD                        |
-| `castRemoveBody?`                | [`CastRemoveBody`](#messagebody)                                  | Present if type is CAST_REMOVE                     |
-| `reactionBody?`                  | [`MessageBody`](#castremovebody)                                  | Present if type is REACTION_ADD or REACTION_REMOVE |
+| `castRemoveBody?`                | [`CastRemoveBody`](#castremovebody)                               | Present if type is CAST_REMOVE                     |
+| `reactionBody?`                  | [`MessageBody`](#messagebody)                                     | Present if type is REACTION_ADD or REACTION_REMOVE |
 | `verificationAddEthAddressBody?` | [`VerificationAddEthAddressBody`](#verificationaddethaddressbody) | Present if type is VERIFICATION_ADD_ETH_ADDRESS    |
 | `verificationRemoveBody?`        | [`VerificationRemoveBody`](#verificationremovebody)               | Present if type is VERIFICATION_REMOVE             |
 
