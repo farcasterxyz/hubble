@@ -105,7 +105,7 @@ class UserDataStore extends RustStoreBase<UserDataAddMessage, never> {
       throw result.error;
     }
 
-    // Read the reuslt bytes as a HubEvent
+    // Read the result bytes as a HubEvent
     const resultBytes = new Uint8Array(result.value);
     const hubEvent = HubEvent.decode(resultBytes);
 
